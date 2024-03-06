@@ -1,0 +1,590 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    /* Navbar */
+    .navbar {
+        background-color: #110fac;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #333;
+        padding: 20px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .logo h1 {
+        color: #180F4A;
+        font-size: 24px;
+    }
+    .menu {
+        flex: 70%;
+        text-align: right;
+        padding: 20px;
+    }
+
+    .menu a {
+        color: #180F4A;
+        text-decoration: none;
+        background-color: white;
+        font-size: 20px;
+        padding: 20px 16px;
+    }
+
+    .menu a:hover {
+        color: white;
+        background-color: #4530bd;
+    }
+
+    /* Sections */
+    section {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    section h2 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #180F4A;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    section p {
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    section a {
+        color: #4530bd;
+        text-decoration: none;
+    }
+
+    section a:hover {
+        text-decoration: underline;
+        color: #180F4A;
+    }
+
+    /* Footer */
+    section.endereco {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; 
+    }
+
+    section.endereco-info {
+        flex: 1;
+        box-sizing: border-box;
+        max-width: 50%; 
+    }
+
+    section.endereco-info h2,
+    section.endereco-info p {
+        margin: 0;
+        margin-bottom: 10px; 
+    }
+
+    section.mapa {
+        flex: 1;
+        box-sizing: border-box;
+        max-width: 50%; 
+        margin-top: 20px;
+        display: flex;
+        align-items: center; 
+    }
+
+    section.mapa iframe {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    /* WhatsApp Button */
+    .whats {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    a.whats {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        z-index: 1000;
+    }
+
+    /* Content */
+    section.conteudo-sobre {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    section.conteudo-sobre h2 {
+        color: #180F4A;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    section.conteudo-sobre p {
+        color: #333;
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    section.conteudo-sobre h3 {
+        color: #180F4A;
+        font-size: 35px;
+        margin-top: 15px;
+    }
+
+    section.imagem-empresa {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    /* Social Media Icons */
+    section.redes-sociais {
+        display: flex;
+        align-items: center;
+    }
+
+    section.redes-sociais a {
+        margin-right: 10px;
+    }
+
+    section.redes-sociais img {
+        width: 70px;
+        height: 70px; 
+    }
+
+    /* Products */
+    .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .produto {
+        flex: 0 0 calc(25% - 20px);
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;;
+        border-radius: 5px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .produto img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .produto p {
+        margin: 0;
+        padding: 10px;
+        font-size: 19px;
+    }
+
+    /* Additional styles for products above the page */
+    .produtos-acima {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .produto-acima {
+        flex: 0 0 calc(25% - 20px);
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .produto-acima img {
+        max-width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .produto-acima p {
+        margin: 0;
+        padding: 10px;
+    }
+    .chamada {
+        font-size: 18px;
+        font-weight: bold;
+        color: #180F4A;
+        text-decoration: none;
+    }
+    .banners {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+
+    .titulo-produto {
+        font-size: 24px; /* Tamanho do título */
+        font-weight: bold; /* Negrito */
+        color: #180F4A; /* Cor do título */
+        margin-bottom: 10px; /* Espaçamento inferior */
+        display: block; /* Para garantir que ocupe toda a largura */
+        text-align: center; /* Alinhamento central */
+    }
+
+    .carousel-container {
+        max-width: 1000px; /* Defina o tamanho máximo para o contêiner do carrossel */
+        margin: 0 auto; /* Centralize o contêiner na página */
+        overflow: hidden; /* Oculte as partes do carrossel que estiverem fora do contêiner */
+    }
+    
+    .carousel {
+        display: flex; /* Faça com que os itens do carrossel sejam exibidos em linha */
+        transition: transform 0.5s ease; /* Adicione uma transição suave ao carrossel */
+    }
+    
+    .banner {
+        flex: 0 0 100%; /* Defina o tamanho de cada banner no carrossel */
+    }
+    
+    .banner img {
+        width: 100%; /* Faça com que as imagens dos banners ocupem 100% da largura do contêiner do banner */
+        height: auto; /* Mantenha a proporção original da imagem */
+    }
+    .content {
+        display: flex;
+        align-items: flex-start; /* Alinha os itens ao topo */
+    }
+    .video-container {
+        position: sticky;
+        top: 50px; /* Ajuste a posição conforme necessário */
+        right: 2px; /* Ajuste a distância da borda direita conforme necessário */
+        width: 300px; /* Largura desejada do contêiner do vídeo */
+        height: auto; /* Ajusta automaticamente a altura proporcionalmente à largura */
+        z-index: 999; /* Certifica-se de que o vídeo esteja acima de outros elementos */
+        overflow: hidden; /* Esconda o conteúdo que excede as dimensões do contêiner */
+    }
+    
+    .video-container video {
+        width: 100%; /* Faz o vídeo ocupar toda a largura do contêiner */
+        height: auto; /* Ajusta automaticamente a altura proporcionalmente à largura */
+        display: block; /* Remove espaços em branco ao redor do vídeo */
+    }
+    .footer {
+        background-color: #110fac;
+        color: white;
+        padding: 50px 0;
+    }
+    .footer a{
+        color: white;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-section {
+        flex: 1;
+        margin-right: 20px;
+        max-width: 300px; /* Largura máxima para cada seção */
+        display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+    }
+    
+    .footer-section h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-section p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .footer-section.contact {
+    margin-right: 0; /* Remove a margem direita para a última seção */
+    }
+    
+    .contact span {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    
+    ul li a {
+        color: white;
+        text-decoration: underline; /* Sublinha os links */
+        transition: color 0.3s ease, text-decoration-color 0.3s ease; /* Adiciona transições */
+    }
+    
+    ul li a:hover {
+        color: #0066ff; /* Muda a cor ao passar o cursor */
+        text-decoration-color: #ffcc00; /* Altera a cor do sublinhado ao passar o cursor */
+    }
+    
+    .social ul {
+        display: flex;
+    }
+    
+    .social ul li {
+        margin-right: 10px;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .divider {
+        margin: 50px auto; /* Margem para centralizar a linha horizontal */
+        border: none;
+        border-top: 1px solid #ccc; /* Cor e estilo da linha */
+        width: 80%; /* Largura da linha */
+    }
+    
+    .product-section {
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
+        gap: 20px; /* Espaçamento entre os produtos */
+        justify-content: center;
+    }
+    
+    .product-item img {
+        width: 100%;
+        height: auto;
+        max-width: 350px; /* Tamanho máximo da imagem */
+    }
+    .faixada {
+        background-image: url("HOME/HOME\ FAIXADA.jpeg"); 
+        background-size: cover;
+        background-position: center;
+        color: black;
+        text-align: center;
+        padding: 100px 0;
+    }
+    
+
+    .texto-informativo {
+        text-align: center;
+        width: 50%; /* Define a largura do contêiner de texto */
+        padding: 20px; /* Adiciona espaçamento interno */
+        background-color: #f4f4f4; /* Cor de fundo clarinha */
+        margin-left: 340px; /* Largura do vídeo + margem */
+    }
+    
+    .texto-informativo h2 {
+        font-size: 36px;
+        color: #180F4A;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao texto */
+    }
+    
+    .texto-informativo p {
+        font-size: 20px;
+        color: #333;
+        margin: 0 auto;
+        max-width: 800px;
+        line-height: 1.6; /* Espaçamento entre linhas */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao texto */
+    }
+    .faixa-produtos {
+        background-image: url("HOME/faixadaprodutos.jpeg"); /* Substitua "caminho/para/sua/imagem.jpg" pelo caminho correto da sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+        background-position: center; /* Centraliza a imagem */
+        color: #fff; /* Cor do texto */
+        padding: 50px 0; /* Espaçamento interno */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+    .faixa-produtos h2 {
+        color: white; /* Cor do texto */
+    }
+    .HomeProdutos{
+        font-size: 24px; /* Tamanho do título */
+        font-weight: bold; /* Negrito */
+        color: #180F4A; /* Cor do título */
+        margin-bottom: 10px; /* Espaçamento inferior */
+        display: block; /* Para garantir que ocupe toda a largura */
+        text-align: center; /* Alinhamento central */
+    }
+    .main-content {
+        background-color: #f0f0f0; /* Define a tonalidade de fundo para destacar o conteúdo */
+        padding: 20px; /* Adiciona espaçamento interno ao conteúdo */
+        margin-top: 20px; /* Adiciona margem superior para separar o conteúdo do navbar */
+    }
+    /* Estilos para a página de produtos */
+    .product-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    }
+
+    .product-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 10px;
+        width: 80%;
+    }
+
+    .product-info img {
+        width: 200px; /* ajuste conforme necessário */
+        height: auto; /* mantém a proporção da imagem */
+        margin: 10px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .custom-carousel {
+        border-radius: 15px;
+        background-color: #f0f0f0; /* Tom pastel */
+        width: 75%; /* Tamanho médio */
+        margin: 0 auto; /* Centralizado */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .custom-carousel-item {
+        display: none;
+    }
+
+    .custom-carousel-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px; /* Bordas redondas para a imagem */
+    }
+
+    .custom-carousel-item-description {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .content {
+        width: 75%;
+        margin: 10% auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .explicacao {
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: Arial, sans-serif;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    .imagem {
+        width: 50%; /* Largura fixa para a imagem */
+    }
+    
+    .imagem img {
+        width: 100%; /* Imagem ocupando todo o espaço da sua div */
+        height: auto; /* Altura automática para evitar distorção */
+    }
+    .content img {
+        max-width: 100%; /* Largura máxima de 100% da caixa pai */
+        max-height: 100%; /* Altura máxima de 100% da caixa pai */
+        width: auto; /* Ajusta automaticamente a largura para manter a proporção */
+        height: auto; /* Ajusta automaticamente a altura para manter a proporção */
+    }
+    
+     .explicacao h2 {
+        font-size: 36px;
+        color: #180F4A;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao texto */
+    }
+    .square-image {
+        width: 800px; /* Defina a largura desejada */
+        height: 800px; /* Defina a mesma altura para criar uma imagem quadrada */
+        object-fit: cover; /* Faz com que a imagem cubra toda a área definida */
+       
+    }
+    .my-carousel {
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .my-banner {
+        flex: 0 0 auto;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .my-banner.active {
+        transform: translateX(-100%);
+    }   
+    /* Estilo para o contêiner da grade de imagens */
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Define a quantidade de colunas e o tamanho mínimo/máximo */
+        grid-gap: 10px; /* Espaçamento entre as imagens */
+    }
+
+    /* Estilo para as imagens */
+    .image-grid img {
+        width: 180px; /* Largura fixa para as imagens */
+        height: 180px; /* Altura fixa para as imagens */
+        object-fit: cover; /* Mantém a proporção da imagem e cobre o espaço disponível */
+        border-radius: 5px; /* Borda arredondada para as imagens */
+    }

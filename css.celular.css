@@ -1,0 +1,191 @@
+    @media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+    .menu {
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px ;
+    }
+
+    /* Sections */
+    section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    section.endereco, section.mapa {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    /* Content */
+    section.conteudo-sobre {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    section.conteudo-sobre h2 {
+        font-size: 20px;
+    }
+
+    section.conteudo-sobre p {
+        font-size: 16px;
+    }
+
+    /* Product Grid */
+    .produtos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; } 
+
+
+    .produto { flex-basis: calc(50% - 20px); margin-bottom: 20px; }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Text alignment */
+    h1, h2, h3, h4, h5, h6, p {
+        text-align: center;
+    }
+    .texto-informativo {
+        text-align: center;
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .texto-informativo h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .texto-informativo {
+        text-align: center;
+        width: 90%; /* Largura ajustada para dispositivos móveis */
+        margin: 20px auto; /* Espaçamento externo */
+    }
+    
+    .video-container {
+        width: 90%; /* Largura ajustada para dispositivos móveis */
+        margin: 20px auto; /* Espaçamento externo */
+    }
+    
+    /* Define um contêiner para o vídeo */
+    .video-container iframe {
+        display: block;
+        width: 100%;
+    }
+
+    /* Ajuste o espaço do footer para evitar sobreposição com o vídeo */
+    .footer-content {
+        flex-direction: column; /* Altera a direção para empilhar itens verticalmente */
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-right: 0; /* Remove a margem direita para empilhar os elementos */
+    }
+    .endereco {
+        flex-direction: column; /* Altera a direção para empilhar itens verticalmente */
+    }
+
+    .mapa {
+        order: 2; /* Define a ordem do mapa para aparecer após o endereço */
+        margin-top: 20px; /* Adiciona espaço superior para separar o endereço do mapa */
+    }
+    .produtos-acima {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    .produtos-acima .produto {
+        flex: 0 0 calc(50% - 10px); /* Metade da largura disponível menos o espaçamento entre os itens */
+        margin: 10px 0; /* Espaçamento superior e inferior entre os itens */
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .content .explicacao {
+        width: 90%; /* Reduz a largura da explicação para ocupar quase toda a largura */
+        padding: 0 10px; /* Reduz o espaçamento interno */
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        line-height: 1.4; /* Reduz a altura da linha */
+        font-weight: normal; /* Altera o peso da fonte para normal */
+    }
+
+    .explicacao h2 {
+        font-size: 28px; /* Reduz o tamanho do título */
+        margin-bottom: 15px; /* Diminui a margem inferior */
+        text-shadow: none; /* Remove a sombra do texto */
+    }
+    .content img {
+        max-width: 95%; /* Ajusta a largura máxima para ocupar até 95% da largura da caixa */
+        height: auto; /* Permite que a altura seja ajustada automaticamente proporcionalmente à largura */
+        border-radius: 10px; /* Bordas arredondadas para a imagem */
+        margin-top: 10px; /* Adiciona um pequeno espaçamento superior */
+        
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+        max-height: 300px; /* Defina um valor adequado para o tamanho da imagem */max-height: 300px; /* Defina um valor adequado para o tamanho da imagem */
+       
+    }
+    .texto-informativo {
+        width: 90%; /* Reduz a largura do contêiner */
+        margin-left: auto; /* Remove a margem à esquerda */
+        margin-right: auto; /* Remove a margem à direita para centralizar */
+    }
+
+    .texto-informativo h2 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        margin-bottom: 15px; /* Diminui a margem inferior */
+    }
+
+    .texto-informativo p {
+        font-size: 16px; /* Reduz o tamanho da fonte do parágrafo */
+        max-width: none; /* Remove a largura máxima para permitir texto completo */
+        line-height: 1.4; /* Reduz o espaçamento entre linhas */
+    }
+    .faixada {
+        background-image: url("HOME/HOME\ FAIXADA.jpeg"); 
+        background-size: contain; /* Alteração aqui */
+        background-position: center;
+        color: black;
+        text-align: center;
+        padding: 30px 0; /* Ajuste de padding para telas menores */
+    }
+    .header {
+        height: 80px; /* Defina uma altura fixa para o header */
+        /* Outros estilos para o header */
+    }
+    .logo {
+        width: 200px; /* Defina uma largura fixa para a logo */
+        height: auto; /* Permita que a altura seja ajustada automaticamente */
+    }
+    
+
+    }

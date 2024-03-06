@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bombonas">
+    <meta name="keywords" content="Agencia Digital, CSS, HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css.celular.css">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+
+    <title>Recupertam Embalagem</title>
+</head>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="imagens/Logo.png" alt="Logo da Loja" class="logo-img">
+    </div>
+    <div>
+        <div class="menu-container">
+            <div class="menu">
+            <a href="home.html" target="_self">Home</a>
+            <a href="contato.html" target="_self">Contato</a>
+            <a href="sobrenos.html" target="_self">Sobre Nós</a>
+            <a href="produtos.html" target="_self">Produtos</a>
+        </div>
+        </div>
+    </div>
+    <a class="whats" target="_blank"
+        href="https://api.whatsapp.com/send?phone=5541995446821&text=Ol%C3%A1%20equipe%20Recupertam!%20Peguei%20seu%20contato%20no%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.">
+        <img style="width: 100px;" src="imagens/whats.png">
+    </a>
+</header>
+
+<body>
+    <div class="faixada">
+    </div>
+    <hr class="divider">
+
+       <div class="carousel-container">
+        <div class="carousel">
+            <div class="banner"><img class="banner-img" src="Produtos Imagens/Banner Certificado.jpeg" alt="Banner Certificado"></div>
+            <div class="banner"><img class="banner-img" src="Produtos Imagens/Banner Compra.jpeg" alt="Banner Compra"></div>
+            <div class="banner"><img class="banner-img" src="Produtos Imagens/Banner Pallet.jpeg" alt="Banner Pallet"></div>
+            <div class="banner"><img class="banner-img" src="Produtos Imagens/Banner Embalagens.jpeg" alt="Banner Embalagens"></div>
+            <div class="banner"><img class="banner-img" src="Produtos Imagens/banner bombonas.jpeg" alt="Banner bombonas"></div>
+        </div>
+    </div>
+    
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const banners = document.querySelectorAll('.banner');
+        let currentIndex = 0;
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % banners.length;
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(nextSlide, 6000);
+        </script>
+
+        <hr class="divider">
+    </div>
+    <div class="HomeProdutos">
+        <h2>Clique nas imagens para conhecer mais sobre os nossos produtos!</h2>
+
+    </div>
+    <div class="product-section">
+        <div class="product-grid">
+            <div class="product-item">
+                <a href="bombonas.html">
+                    <img src="HOME/home 1.jpeg" alt="Produto 1">
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="Pallets.html">
+                    <img src="HOME/home 2.jpeg" alt="Produto 2">
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="Container.html">
+                    <img src="HOME/home 3.jpeg" alt="Produto 3">
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="Tambores.html">
+                    <img src="HOME/home 4.jpeg" alt="Produto 4">
+                </a>
+            </div>
+           
+        </div>
+        <div><hr class="divider"></div>
+    </div>
+        <div class="content">
+        <div class="texto-informativo">
+              <h2>SAIBA MAIS SOBRE NÓS </h2>
+                 <p>A Recupertam é especializada na recuperação de embalagens industriais, oferecendo soluções sustentáveis para reduzir o desperdício e os custos de produção. Com uma abordagem focada na qualidade e no meio ambiente, trabalhamos para prolongar a vida útil das embalagens, promovendo a reutilização e o reaproveitamento responsável de materiais.
+                </p>
+                 <p><strong>Assista ao nosso vídeo para conhecer mais sobre nossos processos e compromisso com a sustentabilidade.</strong></p>
+              
+        </div>
+        <div class="video-container">
+            <video src="Videos/Video.mp4" controls poster="HOME/CAPA.jpeg"></video>
+        </div>
+        </div>
+
+        </div>
+    </div>
+    
+          
+         
+
+
+    
+    </body>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section contact">
+            <div class="contact-info">
+                <h3>Informações de contato</h3>
+                <span><i class="fas fa-envelope"></i> contato@recupertam.com.br</span>
+                <span><i class="fas fa-phone"></i> (41) 99544-6821</span>
+                <span><i class="fas fa-map-marker-alt"></i> Endereço: Rua Gino Benuzzi, 165</span>
+                <span><i class="fas fa-map-marker-alt"></i> CEP: 81350-070</span>
+            </div>
+            <div class="about">
+                <h3>Sobre Nós</h3>
+                <p>Estamos no mercado desde 2007 e nosso compromisso com a responsabilidade ambiental e a eficiência operacional reflete nossa visão de um futuro mais sustentável. </p>
+            </div>
+        </div>
+        <div class="footer-section links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/Recupertam"><i class="fab fa-facebook">Facebook</i></a></li>
+                <li><a href="https://www.instagram.com/recupertam_embalagens/"><i class="fab fa-instagram"></i>Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Recupertam Embalagem | Todos os direitos reservados.
+    </div>
+</footer>
+</html>
